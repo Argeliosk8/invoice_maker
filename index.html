@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invoice Studio | Argelio Baca</title>
+<style>
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#16243a;background:#f3f6fa}*{box-sizing:border-box}body{margin:0}.shell{max-width:1480px;margin:auto;padding:25px 22px 60px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}.top h1{margin:0;font-size:25px;letter-spacing:-.7px}.top p{color:#64748b;margin:5px 0 0}.pill{background:#e3f5ee;color:#14734e;padding:7px 12px;border-radius:99px;font-weight:700;font-size:12px}.workspace{display:grid;grid-template-columns:minmax(340px,450px) minmax(500px,1fr);gap:24px;align-items:start}.panel,.previewWrap{background:white;border:1px solid #e0e7ef;border-radius:17px;box-shadow:0 12px 35px #13243b0b}.panel{padding:22px}.panel h2{font-size:15px;margin:0 0 16px}.group{border-top:1px solid #e7edf4;padding-top:18px;margin-top:20px}.group:first-of-type{border-top:0;padding-top:0;margin-top:0}.group h3{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#078781;margin:0 0 13px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field.wide{grid-column:1/-1}label{display:block;font-size:11px;font-weight:700;color:#66768a;margin-bottom:5px}input,textarea{width:100%;border:1px solid #dbe3ed;border-radius:8px;padding:10px 11px;color:#192a42;background:#fff;font:inherit;font-size:13px;outline-color:#108b85}textarea{resize:vertical;min-height:52px}.hint{font-size:11px;color:#708096;line-height:1.5;margin:9px 0 0}.actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.btn{border:1px solid #d3dee9;background:white;color:#253955;border-radius:9px;padding:11px 14px;font:inherit;font-size:12px;font-weight:800;cursor:pointer}.btn.primary{background:#0d7779;border-color:#0d7779;color:white}.btn:hover{filter:brightness(.96)}.previewWrap{padding:20px;position:sticky;top:15px}.previewTop{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px;color:#708096;font-size:12px}.paper{background:#fff;min-height:820px;box-shadow:0 2px 18px #16243a12;border:1px solid #edf0f4;padding:45px 45px 35px;overflow-wrap:anywhere}.invoiceHead{display:flex;justify-content:space-between;align-items:start;border-bottom:1px solid #dce5eb;padding-bottom:23px}.invoiceHead h2{font-size:32px;margin:0;letter-spacing:2px}.invoiceHead .meta{text-align:right;font-size:12px;line-height:1.8;color:#53657a}.two{display:grid;grid-template-columns:1fr 1fr;gap:35px;padding:28px 0 25px;border-bottom:1px solid #dce5eb}.kicker{font-size:10px;letter-spacing:1.6px;color:#0b8c85;text-transform:uppercase;font-weight:800;margin-bottom:11px}.name{font-size:14px;font-weight:800;margin-bottom:6px}.detail{font-size:12px;color:#526277;line-height:1.65;white-space:pre-line}.period{padding:23px 0;display:grid;grid-template-columns:1fr 1fr}.period strong{font-size:13px}.lineTable{width:100%;border-collapse:collapse;font-size:12px}.lineTable th{background:#182a43;color:white;text-align:left;text-transform:uppercase;letter-spacing:1px;font-size:10px;padding:13px 10px}.lineTable th:first-child{border-radius:6px 0 0 6px}.lineTable th:last-child{border-radius:0 6px 6px 0}.lineTable td{padding:19px 10px;border-bottom:1px solid #e3e9f0;vertical-align:top}.lineTable .num{text-align:right;white-space:nowrap}.lineTable small{display:block;color:#697a8b;margin-top:5px;line-height:1.4}.totals{width:260px;max-width:100%;margin:18px 0 25px auto}.totalrow{display:flex;justify-content:space-between;font-size:12px;color:#57697c;padding:7px 0}.grand{background:#eaf5f4;padding:14px;border-radius:7px;color:#0b7d7b;font-weight:800;display:flex;justify-content:space-between;align-items:center;margin-top:7px;font-size:12px}.grand strong{font-size:19px;color:#17273e}.bank{margin-top:28px}.bank h3{font-size:11px;letter-spacing:1.3px;color:#0b8c85;margin:0 0 12px}.bankRows{border-top:1px solid #dfe7ed;padding-top:10px}.bankRow{display:grid;grid-template-columns:140px 1fr;gap:12px;font-size:12px;padding:6px 0}.bankRow span:first-child{color:#607186}.footer{border-top:1px solid #dce5eb;margin-top:28px;padding-top:15px;font-size:11px;color:#66788a;line-height:1.7}.footer .thanks{text-align:right;color:#0a8581;font-weight:800;margin-top:18px}.subtle{font-size:12px;color:#7b8ba0}.alert{background:#fff8e8;border:1px solid #f6dea9;padding:10px 12px;border-radius:8px;color:#8d651d;font-size:11px;line-height:1.5;margin-top:12px}@media(max-width:1050px){.workspace{grid-template-columns:1fr}.previewWrap{position:static}.paper{max-width:800px;margin:auto}}@media(max-width:600px){.shell{padding:17px 10px}.panel,.previewWrap{padding:14px}.fields{grid-template-columns:1fr}.paper{padding:23px 16px;min-height:0}.two{gap:15px}.lineTable{font-size:10px}.lineTable th,.lineTable td{padding:10px 5px}.bankRow{grid-template-columns:110px 1fr}.invoiceHead h2{font-size:25px}}@page{size:letter;margin:0}@media print{html,body{background:white}.shell{max-width:none;margin:0;padding:0}.top,.panel,.previewTop,.alert{display:none!important}.workspace{display:block}.previewWrap{padding:0;border:0;box-shadow:none}.paper{border:0;box-shadow:none;width:8.5in;min-height:11in;padding:.55in .58in;margin:0;print-color-adjust:exact;-webkit-print-color-adjust:exact}.lineTable th,.grand{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<main class="shell">
+ <header class="top"><div><h1>Invoice Studio</h1><p>Edit once, preview instantly, save a PDF every month.</p></div><span class="pill">Offline ready</span></header>
+ <div class="workspace">
+  <section class="panel" aria-label="Invoice editor"><h2>Invoice details</h2>
+   <div class="group"><h3>Billing period</h3><div class="fields">
+    <div class="field"><label for="month">Service month</label><input id="month" type="month" value="2026-10"></div>
+    <div class="field"><label for="invoiceNumber">Invoice number</label><input id="invoiceNumber" value="AB-2026-10-001"></div>
+    <div class="field"><label for="issued">Date issued</label><input id="issued" type="date" value="2026-10-26"></div>
+    <div class="field"><label for="hoursPerDay">Hours per weekday</label><input id="hoursPerDay" type="number" min="0" step="0.25" value="2"></div>
+    <div class="field"><label for="workdays">Billable weekdays</label><input id="workdays" type="number" min="0" step="1" value="22"></div>
+    <div class="field"><label for="hourly">Hourly rate (USD)</label><input id="hourly" type="number" min="0" step="0.01" value="25"></div>
+    <div class="field wide"><label for="description">Service description</label><input id="description" value="Recruiting services"></div>
+   </div><p class="hint">Changing the month automatically counts Monday-Friday weekdays. Adjust the day count for holidays, time off, or partial months.</p></div>
+   <div class="group"><h3>Reimbursement</h3><div class="fields">
+    <div class="field"><label for="expense">Amount (USD)</label><input id="expense" type="number" min="0" step="0.01" value="169.99"></div>
+    <div class="field"><label for="expenseName">Expense name</label><input id="expenseName" value="LinkedIn Recruiter Lite reimbursement"></div>
+    <div class="field wide"><label for="expenseNote">Receipt reference / notes</label><input id="expenseNote" value="Paid Oct 5 | LinkedIn invoice #789328356640"></div>
+   </div><p class="hint">Set the amount to 0 to hide reimbursement from the invoice.</p></div>
+   <div class="group"><h3>Sender &amp; client</h3><div class="fields">
+    <div class="field wide"><label for="sender">Your legal name</label><input id="sender" value="Argelio Jose Baca Acevedo"></div>
+    <div class="field wide"><label for="address">Your address</label><textarea id="address">Residencial Veredas de Veracruz, House A5&#10;Nindiri, Masaya, Nicaragua 42200</textarea></div>
+    <div class="field wide"><label for="email">Your email</label><input id="email" type="email" value="argelio.baca@gmail.com"></div>
+    <div class="field"><label for="client">Client company</label><input id="client" value="Chiri.ai"></div>
+    <div class="field"><label for="attention">Attention to</label><input id="attention" value="Jeff Baumgarten, COO"></div>
+   </div></div>
+   <div class="group"><h3>Wire transfer information</h3><div class="fields">
+    <div class="field wide"><label for="beneficiary">Beneficiary</label><input id="beneficiary" value="Argelio Jose Baca Acevedo"></div>
+    <div class="field"><label for="bank">Bank</label><input id="bank" value="TerraBank"></div>
+    <div class="field"><label for="account">Account</label><input id="account" value="1307925506"></div>
+    <div class="field wide"><label for="accountType">Account type</label><input id="accountType" value="Personal Checking"></div>
+    <div class="field"><label for="routing">Routing / ABA</label><input id="routing" value="066012333"></div>
+    <div class="field"><label for="swift">SWIFT / BIC</label><input id="swift" value="TBNAUS33"></div>
+    <div class="field wide"><label for="bankAddress">Bank address</label><input id="bankAddress" value="3191 Coral Way, Miami, Florida 33145"></div>
+   </div></div>
+   <div class="actions"><button class="btn primary" id="printBtn">↓ Save invoice as PDF</button><button class="btn" id="nextBtn">Next month →</button><button class="btn" id="saveBtn">↓ Backup settings</button><button class="btn" id="loadBtn">↑ Restore settings</button><input type="file" id="fileInput" accept=".json,application/json" hidden></div>
+   <div class="alert">PDF download uses your browser's Print dialog. Select <b>Save as PDF</b> as the destination. Data stays in this browser, and the backup button lets you transfer settings between devices.</div>
+  </section>
+  <section class="previewWrap"><div class="previewTop"><strong>Live invoice preview</strong><span>US Letter · USD</span></div>
+   <article class="paper" id="paper">
+    <div class="invoiceHead"><h2>INVOICE</h2><div class="meta"><strong id="pNumber"></strong><div id="pIssued"></div></div></div>
+    <div class="two"><div><div class="kicker">From</div><div class="name" id="pSender"></div><div class="detail" id="pAddress"></div><div class="detail" id="pEmail"></div></div><div><div class="kicker">Bill to</div><div class="name" id="pClient"></div><div class="detail" id="pAttention"></div></div></div>
+    <div class="period"><div><div class="kicker">Service period</div><strong id="pPeriod"></strong></div><div><div class="kicker">Currency</div><strong>USD</strong></div></div>
+    <table class="lineTable"><thead><tr><th>Description</th><th class="num">Qty</th><th class="num">Rate</th><th class="num">Amount</th></tr></thead><tbody>
+     <tr><td><strong id="pDescription"></strong><small id="pHoursNote"></small></td><td class="num" id="pHours"></td><td class="num" id="pHourly"></td><td class="num"><strong id="pServiceTotal"></strong></td></tr>
+     <tr id="expenseRow"><td><strong id="pExpenseName"></strong><small id="pExpenseNote"></small></td><td class="num">1</td><td class="num" id="pExpenseRate"></td><td class="num"><strong id="pExpenseTotal"></strong></td></tr>
+    </tbody></table>
+    <div class="totals"><div class="totalrow"><span>Services</span><strong id="pSub"></strong></div><div class="totalrow" id="expenseSummary"><span>Reimbursement</span><strong id="pReim"></strong></div><div class="grand"><span>TOTAL DUE (USD)</span><strong id="pTotal"></strong></div></div>
+    <div class="bank"><h3>WIRE TRANSFER DETAILS</h3><div class="bankRows">
+     <div class="bankRow"><span>Beneficiary</span><strong id="pBeneficiary"></strong></div><div class="bankRow"><span>Bank</span><span id="pBank"></span></div><div class="bankRow"><span>Account</span><span id="pAccount"></span></div><div class="bankRow"><span>Routing / ABA</span><span id="pRouting"></span></div><div class="bankRow"><span>SWIFT / BIC</span><span id="pSwift"></span></div><div class="bankRow"><span>Bank address</span><span id="pBankAddress"></span></div>
+    </div></div><div class="footer">Payment requested via USD wire transfer.<br>Please include <span id="pReference"></span> in the transfer reference.<div class="thanks">Thank you for your business.</div></div>
+   </article>
+  </section>
+ </div>
+</main>
+<script>
+(()=>{
+const ids=['month','invoiceNumber','issued','hoursPerDay','workdays','hourly','description','expense','expenseName','expenseNote','sender','address','email','client','attention','beneficiary','bank','account','accountType','routing','swift','bankAddress'];
+const $=id=>document.getElementById(id);
+const val=id=>$(id).value;
+const set=(id,value)=>{$(id).textContent=String(value??'')};
+const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(Number(n)||0);
+const prettyDate=str=>{if(!str)return '';const [y,m,d]=str.split('-').map(Number);return new Date(y,m-1,d).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});};
+const period=str=>{if(!str)return '';const [y,m]=str.split('-').map(Number);return `${new Date(y,m-1,1).toLocaleDateString('en-US',{month:'long'})} 1-${new Date(y,m,0).getDate()}, ${y}`;};
+const monthLabel=str=>{if(!str)return '';const [y,m]=str.split('-').map(Number);return new Date(y,m-1,1).toLocaleDateString('en-US',{month:'long',year:'numeric'});};
+const weekdays=str=>{if(!str)return 0;const [y,m]=str.split('-').map(Number);let count=0;for(let d=1;d<=new Date(y,m,0).getDate();d++){const day=new Date(y,m-1,d).getDay();if(day!==0&&day!==6)count++;}return count;};
+function render(){const hrs=Math.max(0,Number(val('hoursPerDay'))||0)*Math.max(0,Number(val('workdays'))||0);const rate=Math.max(0,Number(val('hourly'))||0);const expense=Math.max(0,Number(val('expense'))||0);const total=hrs*rate;set('pNumber',val('invoiceNumber'));set('pIssued','Issued: '+prettyDate(val('issued')));set('pSender',val('sender'));set('pAddress',val('address'));set('pEmail',val('email'));set('pClient',val('client'));set('pAttention','Attn: '+val('attention'));set('pPeriod',period(val('month')));set('pDescription',val('description')+' - '+monthLabel(val('month')));set('pHoursNote',`${val('hoursPerDay')} hours per weekday × ${val('workdays')} weekdays`);set('pHours',`${Number(hrs.toFixed(2))} hrs`);set('pHourly',money(rate));set('pServiceTotal',money(total));set('pExpenseName',val('expenseName'));set('pExpenseNote',val('expenseNote'));set('pExpenseRate',money(expense));set('pExpenseTotal',money(expense));$('expenseRow').hidden=expense<=0;$('expenseSummary').hidden=expense<=0;set('pSub',money(total));set('pReim',money(expense));set('pTotal',money(total+expense));set('pBeneficiary',val('beneficiary'));set('pBank',val('bank'));set('pAccount',val('account')+' ('+val('accountType')+')');set('pRouting',val('routing'));set('pSwift',val('swift'));set('pBankAddress',val('bankAddress'));set('pReference',val('invoiceNumber'));try{localStorage.setItem('argelioInvoiceV1',JSON.stringify(Object.fromEntries(ids.map(id=>[id,val(id)]))))}catch(e){} }
+function changeMonth(offset){const [y,m]=val('month').split('-').map(Number);if(!y||!m)return;const d=new Date(y,m-1+offset,1);const month=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;$('month').value=month;$('workdays').value=weekdays(month);$('invoiceNumber').value=`AB-${month}-001`;$('issued').value=new Date().toLocaleDateString('en-CA');$('expense').value='0';$('expenseNote').value='';render();}
+for(const id of ids){$(id).addEventListener('input',()=>{if(id==='month'){$('workdays').value=weekdays(val('month'));$('invoiceNumber').value=`AB-${val('month')}-001`;}render()});}
+$('nextBtn').addEventListener('click',()=>changeMonth(1));
+$('printBtn').addEventListener('click',()=>window.print());
+$('saveBtn').addEventListener('click',()=>{const data=Object.fromEntries(ids.map(id=>[id,val(id)]));const blob=new Blob([JSON.stringify({type:'argelio-invoice-settings',version:1,fields:data},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`Invoice_settings_${val('month')||'backup'}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+$('loadBtn').addEventListener('click',()=>$('fileInput').click());
+$('fileInput').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(data.type!=='argelio-invoice-settings'||!data.fields)throw new Error('Invalid file');for(const id of ids)if(typeof data.fields[id]==='string')$(id).value=data.fields[id];render();alert('Settings restored.');}catch(err){alert('Could not load this settings file.');}e.target.value='';});
+try{const saved=JSON.parse(localStorage.getItem('argelioInvoiceV1')||'null');if(saved)for(const id of ids)if(typeof saved[id]==='string')$(id).value=saved[id];}catch(e){}
+render();
+})();
+</script>
+</body>
+</html>
